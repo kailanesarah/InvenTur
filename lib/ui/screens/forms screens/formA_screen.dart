@@ -1,24 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:inventur/ui/widgets/container_form.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class FormularioA extends StatelessWidget {
   const FormularioA({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final sizeScreen = MediaQuery.sizeOf(context);
     return Scaffold(
-        backgroundColor:Colors.white,
+        backgroundColor: Colors.white,
         body: Column(children: [
           Padding(
-              padding: EdgeInsets.only(
-                  right: 1142.5.w,
-                  top: 149.6.h),
+              padding: EdgeInsets.only(right: 1142.5.w, top: 149.6.h),
               child: SizedBox(
                 height: 89.76.h,
                 child: IconButton(
                   onPressed: () => Navigator.pop(context),
-                  icon:  Icon(Icons.arrow_back, size: 96.h,),
+                  icon: Icon(
+                    Icons.arrow_back,
+                    size: 96.h,
+                  ),
                   padding: EdgeInsets.only(bottom: 14.96.h),
                 ),
               )),
@@ -47,12 +48,20 @@ class FormularioA extends StatelessWidget {
           Expanded(
               child: ListView(children: [
             const ContainerA(
-              form: 'Informações básicas do município', routeName: '/InfoBasicas',
+              form: 'Comércio turístico',
+              routeName: '/ComercioTuristico',
             ),
-            const ContainerA(form: 'Locadoras de imóveis para temporadas',routeName: '/LocadoraDeImoveis',),
+
+            const ContainerA(
+              form: 'Informações básicas do município',
+              routeName: '/InfoBasicas',
+            ),
+            const ContainerA(
+              form: 'Locadoras de imóveis para temporadas',
+              routeName: '/LocadoraDeImoveis',
+            ),
             // const ContainerA(form: 'Compras especiais'),
-            const ContainerA(form: 'Comércio turístico', routeName: '/ComercioTuristico',),
-            
+
             // const ContainerA(form: 'Representações diplomáticas'),
             // ExpansionTileA(titulo: 'Serviços', minhaLista: [
             //   Tilee(texto: 'Serviços bancários', routeName: '/Placeholder'),
@@ -90,13 +99,13 @@ class FormularioA extends StatelessWidget {
               minhaLista: const [
                 SizedBox(),
                 Tilee(
-                  texto: 'Sistemas de segurança', routeName: '/SistemaDeSeguranca'
-                ),
+                    texto: 'Sistemas de segurança',
+                    routeName: '/SistemaDeSeguranca'),
                 // Tilee(
                 //   texto: 'Sistemas de saúde', routeName: '/Placeholder'
                 // ),
                 SizedBox(),
-               SizedBox(),
+                SizedBox(),
               ],
             ),
 

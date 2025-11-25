@@ -5,7 +5,7 @@ import openpyxl
 from datetime import date, datetime
 from django.db.models import Model
 import json
-
+ 
 def process_value(value):
     # Se for callable, chama a função
     if callable(value):

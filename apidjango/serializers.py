@@ -19,7 +19,7 @@ class UserSerializer(serializers.ModelSerializer):
         queryset = Pesquisa.objects.all(),
         required=False
         )
-        
+         
     class Meta:
         model = CustomUser
         fields = ['id','username', 'CPF', 'email', 'password', 'is_active',  'acessLevel', 'status', 'password', 'telefone', 'pesquisas']

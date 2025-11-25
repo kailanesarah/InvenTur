@@ -3109,4 +3109,4 @@ class EventosProgramados(Base):
     fretadoTelefone5 = models.CharField(max_length=255,blank=True, null=True)
     fretadoEmail5 = models.CharField(max_length=255,blank=True, null=True)
     fretadoSite5 = models.CharField(max_length=255,blank=True, null=True)
-    instalacoesOutras = models.CharField(max_length=255, blank=True, null=True)
+    instalacoesOutras = models.CharField(max_length=255, blank=True, null=True) 
